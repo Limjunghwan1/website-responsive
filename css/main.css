@@ -1,0 +1,375 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2');
+@font-face {
+  font-family: 'Tenada';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Tenada.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#wrap {
+	background: #3f3e3e;
+	width: 100%;
+}
+*{box-sizing: border-box;}
+a,span {display: block;}
+
+
+/*______________________ PC 기준 */
+
+#moheader{display: none;}
+
+/* Header ============================== */
+
+#pcheader{
+  width: 100%;
+  background-color: #515555;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* 유틸메뉴 */
+.topUtil {
+  height: 35px;
+	background-color: #313131;
+	padding-right: 50px;
+}
+.utilmenu{
+  height: inherit;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.utilmenu li{
+  color: #fff;
+	font-size: 13px;
+  font-size:0.813rem;
+  padding: 0 5px;
+}
+.utilmenu li .icon1{ 
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+/* 탑메뉴 */
+.topMenu{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.logo{
+  flex: 1;
+  /* border: 1px solid blue; */
+  padding-left:180px;
+  align-items: center;
+  display: flex;
+}
+.logo img{height: 70px;}
+
+.gnb{flex: 5;}
+.gnbmenu {
+  width:100%;
+  height:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid pink; */
+}
+.gnbmenu li{
+  margin: 0 20px;
+  color: #ffffff;
+}
+.gnbmenu li:hover{color: #919191;}
+
+/* 비주얼영역 */
+#visual {
+	width: 100%;
+	/* max-width: 1200px; */
+  margin: auto;
+  position: relative;
+}
+#visual h2 { 
+  position: absolute;
+  top: 10%;
+	left: 10%; 
+  color: #fff;
+	font-size: 60px;
+	/* font-size: 3.125rem; */
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 100px;
+}
+#visual h2 span{
+  color: #fff;
+	font-size: 70px;
+  /* font-size: 4.063rem; */
+}
+
+/*pc에서는 1번째 이미지만 보이게 함*/
+.visual_image li:nth-child(2),
+.visual_image li:nth-child(3) {display: none;}
+.visual_image li:nth-child(1) {display: block;}
+
+.visual_image li img {  /*가변이미지*/
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* Section ============================== */
+section{
+  width: 100%;
+}
+
+section h2{
+  color: white;
+  text-align: left;
+  font-size: 39px;
+  padding: 20px;
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+
+.section2_h2{
+  margin-top: 20px;
+}
+
+section p{ /* 컨텐츠 글자들 */
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.section1{
+  display: flex;
+  justify-content: center;
+}
+
+.section1 p{
+  text-align: center;
+  /* border: 1px solid #000; */
+  display: block; /* 글자 가운데정렬 먹기 위해 */
+}
+
+
+.section1 div{
+  overflow: hidden;
+  transition: 0.3s;
+  border: 2px solid #000;
+  width: 25%;
+  height: 450px;
+  transition: 1s;
+}
+
+.section1 div img{
+  width: 700px;
+  height: 450px;
+  transition: 1s;
+}
+
+.section1 div:hover{
+  overflow: visible;
+  width: 700px;
+  height: 450px;
+  z-index: 1;
+  transform: scale(1.05);
+}
+
+.blackline{
+  margin-top: 50px;
+  border: 0.5px solid #000;
+  width: 100%;
+}
+
+
+#section2,
+#section3,
+#section4,
+#section5,
+#section6,
+#section7{
+  width:90%;
+  display: flex;
+  margin: auto;
+  gap: 30px; /* 메인 컨텐츠 글씨랑 사진간격 */
+  margin-bottom: 15px;
+}
+
+#section2{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 50px 0px 0px;
+}
+
+.section2_text,
+.section3_text,
+.section4_text,
+.section5_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+strong{
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.section2_text strong{
+  color: #e167ff;
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+}
+.section3_text strong{
+  color: #f5fdac;
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+}
+.section4_text strong{
+  color: #ffffff;
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+}
+.section5_text strong{
+  color: #bfe2ff;
+  font-family: 'Tenada';
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+#section3{
+  display: flex;
+  padding: 0px 0px 0px 50px;
+  border: 3px solid #ece798;
+}
+
+#section4{
+  display: flex;
+  background-color: #2b2b2b;
+  padding: 0px 50px 0px 0px;
+}
+
+#section5{
+  display: flex;
+  padding: 0px 0px 0px 50px;
+  border: 3px solid #9b9898;
+}
+
+#section6{
+  display: flex;
+  justify-content: center;
+}
+#section6 img{
+  width: 25%;
+}
+
+#section7{
+  display: flex;
+  justify-content: center;
+}
+#section7 img{
+  width: 25%;
+}
+
+
+
+/* Footer ============================== */
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: #000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.logo2{
+  flex: 1;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
+}
+.logo2 img{height: 70px;}
+
+.footer_text{
+  flex: 2;
+  /* border: 1px solid #ffffff; */
+  justify-content: center;
+  display: flex;
+}
+
+.footer_sns{
+  flex: 1;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* border: 1px solid #ff0000; */
+}
+
+.footer_sns img{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer_sns img:hover{
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*______________________________________________ Tablet */
+/*768~1199범위의 해상도*/
+
+
+/*______________________________________________ Mobile */
+/*767이하 ~범위의 해상도*/
+
+
+
+
+
