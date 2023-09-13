@@ -212,9 +212,15 @@ footer p{
     margin-right: 20px;
     /* border: 1px solid #000; */
   }
+  .logo {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-left: 39px;
+    display: block;
+  }
   .logo img {
     height: 40px;
-    margin-left: 20px;
   }
   .mognb ul li.close { 
     position: absolute;
@@ -302,8 +308,8 @@ section h2{
 .section1 div{
   overflow: visible; 
   transition: 0.3s;
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
   border: none;
   justify-content: center;
   margin: auto;
@@ -317,8 +323,8 @@ section h2{
 
 .section1 div:hover{
   transform: scale(1.05);
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 90%;
 }
 
 #section2,
